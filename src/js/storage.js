@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const lStorage = {
   setItem: (key, value) => localStorage.setItem(key, value),
   getItem: key => localStorage.getItem(key),
