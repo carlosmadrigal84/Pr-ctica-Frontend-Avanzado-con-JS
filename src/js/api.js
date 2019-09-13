@@ -1,4 +1,4 @@
-
+//Este es el archivo api
 const API_KEY = 'JRHX2T5-RE1MQWB-MDAYG74-4SS082G';
 
 const api = (API_URL = 'https://web-bootcamp-exercise-beer-api-nijliozdcg.now.sh/api/v1/') => {
