@@ -1,0 +1,29 @@
+{
+  "name": "beerflix",
+  "version": "1.0.0",
+  "description": "The project consists of a web that renders objects recieved from an API. All resources are managed through Webpack.",
+  "main": "postcss.config.js",
+  "scripts": {
+    "server": "./node_modules/.bin/http-server . -c-1",
+    "start": "node server.js",
+    "lint": "./node_modules/.bin/eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosmadrigal84/Pr-ctica-Frontend-Avanzado-con-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosmadrigal84/Pr-ctica-Frontend-Avanzado-con-JS/issues"
+  },
+  "homepage": "https://github.com/carlosmadrigal84/Pr-ctica-Frontend-Avanzado-con-JS#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "http-server": "^0.11.1",
+    "husky": "^3.0.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
