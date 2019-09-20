@@ -1,4 +1,4 @@
-//import './styles/index.scss';
+import './styles/index.scss';
 import './js/ui.js';
 import './js/beers.js';
 import './js/navbar.js';
