@@ -1,24 +1,21 @@
 # Beerflix
-## Introduction
-The project consists of a web that renders objects recieved from an API. All resources are managed through Webpack.
+## Introducción
 
-## Installing the App
+La práctica consiste en una web que renderiza objetos recibidos de una API.
+
+## instalando la app
 First, you need to install all dependenncies from the project. Run
-```shell
+Primero, necesitamos instalar las dependencias desde el proyecto. Abrimos una consola y ejecutamos:
+
 npm install
 
-## Running the App
-There are several scripts to build and run the app in various modes.
-To build the files into `/dist` without browser auto updating run:
-```shell
+## Arrancamos la app
+Para ejecutar la app:
+
 npm start
 
-Lastly, to run in production mode, with file minyfication, use:
-```shell
-npm run prod
-
-## Using the App
-### List of beers
+## Uso de la app
+### Listado de cervezas
 From root page `'/'`, you can access a list of beers. A filtering form will be displayed when the user clicks or taps on the magnifying glass icon.
 
 Results will be rendered, up to a maximum of 10.

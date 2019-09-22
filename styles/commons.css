@@ -29,21 +29,18 @@ main {
 .button.search {
     background-color: white;
     border-radius: 2px;
-    border: 1px solid green;
-    padding: 5px 10px;
+    border: 2px solid green;
+    padding: 5px 5px 5px 5px;
     color: green;
-    transition: all linear .3s;
-    font-size: 0.7rem;
-    cursor: pointer;
     border: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .button:hover {
     background-color: green;
     border: 1px solid white;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: white;
     transition-duration: 1000ms
 }
@@ -70,6 +67,7 @@ main {
     width: 50%;
     border-radius: 2px;
     padding: 10px;
+    border: none;
     border-style: none;
     font-size: 1rem;;
     border-top-right-radius: 0;
