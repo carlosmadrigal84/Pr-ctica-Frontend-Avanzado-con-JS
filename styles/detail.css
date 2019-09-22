@@ -88,7 +88,7 @@ header {
 
 .content,
 .quote-form,
-.quotes-list, {
+.quotes-list {
     width: 80%;
     margin: 20px auto;
 }
