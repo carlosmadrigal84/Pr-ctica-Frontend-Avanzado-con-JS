@@ -10,7 +10,7 @@ const dateInput =
 searchForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
   if (searchInput.value !== '' || dateInput !== '') {
-    // traer shows!!!
+
     renderDOMBeers(searchInput.value, dateInput.value);
   }
 });
