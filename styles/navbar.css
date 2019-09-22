@@ -1,0 +1,49 @@
+.app-navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 100px;
+    min-height: 50px;
+    z-index: 3;
+}
+  
+.navbar-image-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 100%;
+    width: 100%;
+}
+
+a {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.fas {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.filter-container {
+    display: flex;
+    width: 45%;
+    height: 20%;
+    justify-content: space-around;
+}
+
+.filter-input {
+    display: flex;
+    height: 20%;
+    width: 45%;
+    justify-content: flex-end;
+}

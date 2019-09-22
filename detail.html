@@ -8,13 +8,54 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <link rel="icon" type="image/x-icon" href="<%= require('./images/favicon.ico') %>" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/commons.css">
 </head>
 
 <body>
-  <%= require('html-loader!./templates/navbar.html') %>
+  <navbar id="navbar" class="app-navbar no-search">
+    <picture class="navbar-image-bg">
+      <source srcset="images/navbar-large-desktop.jpg" media="(min-width: 1024px)">
+      <source srcset="images/navbar-desktop.jpg" media="(min-width: 768px)">
+      <source srcset="images/navbar-tablet.jpg" media="(min-width: 425px)">
+      <source srcset="images/navbar-mobile.jpg" media="(min-width: 150px)">
+      <img src="../images/navbar-mobile.jpg" alt="Beer">
+    </picture>
+  
+    <div class="navbar-logo">
+      <a href="/">Beerflix</a>
+    </div>
+    <div class="filter-container">
+      <form id="search-form" class="filter-input">
+        <input placeholder="buscar..." class="input search text" type="text">
+        <input placeholder="año" class="input search date" type="text">
+        <button type="submit" class="button search">Buscar</button>
+      </form>
+    </div>
+    <div class="navbar-icon">
+      <i id="navbar-search" class="fas fa-search"></i>
+      <i id="navbar-close" class="fas fa-times"></i>
+    </div>
+  </navbar>
   <main>
-    <%= require('html-loader!./templates/detail-template.html') %>
+    <section id="detailSection" class="detail-section">
+      <div id="detail" class="detail-content"></div>
+      <div class="quotes-list">
+        <h2>Quotes</h2>
+        <div id="quoteList">
+        </div>
+      </div>    
+      
+      <form id="quote-form" class="quote-form" novalidate>
+        <div class="quote-input">
+          <label for="quote">Quote of this show</label>
+          <input id="quote" placeholder="Add your quote" class="input primary" type="text">
+        </div>
+        <button type="submit" class="button primary">Comment</button>
+      </form>
+    </section>
   </main>
 </body>
 
