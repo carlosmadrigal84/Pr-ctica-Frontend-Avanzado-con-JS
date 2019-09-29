@@ -6,59 +6,54 @@
   <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
   <title>BeerFlix</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css">
+  <!--<link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/commons.css">
-  <link rel="stylesheet" href="styles/showSection.css">
+  <link rel="stylesheet" href="styles/showSection.css">-->
+  <link rel="stylesheet" href="stiloso.css">
 </head>
 <body>
-  <navbar id="navbar" class="app-navbar no-search">
-    <picture class="navbar-image-bg">
-      <source srcset="images/navbar-large-desktop.jpg" media="(min-width: 1024px)">
-      <source srcset="images/navbar-desktop.jpg" media="(min-width: 768px)">
-      <source srcset="images/navbar-tablet.jpg" media="(min-width: 425px)">
-      <source srcset="images/navbar-mobile.jpg" media="(min-width: 150px)">
-      <img src="../images/navbar-mobile.jpg" alt="Beer">
-    </picture>
-  
-    <div class="navbar-logo">
-      <a href="/">Beerflix</a>
-    </div>
-    <div class="filter-container">
-   
-        <div>
-          <input placeholder="buscar..." class="input search text" type="text">
-        </div> 
-          
-        <div>
-          <input placeholder="año" class="input search date" type="text">
+    <navbar id="navbar" class="app-navbar no-search">
+        <label for="burger-checkbox" class="burger-label"></label>
+        <picture class="navbar-image-bg">
+            <source srcset="images/navbar-large-desktop.jpg" media="(min-width: 1024px)">
+            <source srcset="images/navbar-desktop.jpg" media="(min-width: 768px)">
+            <source srcset="images/navbar-tablet.jpg" media="(min-width: 425px)">
+            <source srcset="images/navbar-mobile.jpg" media="(min-width: 150px)">
+            <img src="../images/navbar-mobile.jpg" alt="Beer">
+        </picture>
+        <div class="navbar-logo">
+            <a href="/">Beerflix</a>
         </div>
-        <div>
-          <button type="submit" class="button search">Buscar</button>
-        </div>
+    
+        <div class="filter-container">
        
-    </div>
-    <!--<div class="filter-container">
-      <form id="search-form" class="filter-input">
-        <input placeholder="buscar..." class="input search text" type="text">
-        <input placeholder="año" class="input search date" type="text">
-        <button type="submit" class="button search">Buscar</button>
-      </form>
-    </div>-->
-  </navbar>
+            <div>
+                <input placeholder="buscar..." class="input-search" type="text">
+            </div> 
+          
+            <div>
+                <input placeholder="año" class="input-search-date" type="date">
+            </div>
+            <div>
+                <button type="submit" class="button-search">Buscar</button>
+            </div>
+       
+        </div>
+    </navbar>
   <main>
     <section id="show-section" class="show-section">
       <!-- Beers will be rendered here -->
     </section>
   </main>
+  
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script type="module" src="js/quotesForm.js"></script>
-    <script type="module" src="detail.js"></script>
+    <!--<script type="module" src="js/quotesForm.js"></script>
+    <script type="module" src="detail.js"></script>-->
     <script type="module" src="js/routes.js"></script>
-    <script type="module" src="js/api.js"></script>
-    <script type="module" src="js/ui.js"></script>
-    <script type="module" src="main.js"></script>
+    <!--<script type="module" src="js/api.js"></script>
+    <script type="module" src="js/ui.js"></script>-->
 </body>
 
 </html>

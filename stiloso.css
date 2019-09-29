@@ -1,18 +1,5 @@
-.filter-container{
-    display: inline-flex;
-    width: 100%;
-    justify-content: flex-end;
-    
-}
-
 .navbar-logo {
     display: inline-flex;
-}
-
-a {
-    display: inline-flex;
-    font-size: 2rem;
-    color: white; 
 }
 
 .app-navbar {
@@ -39,3 +26,101 @@ a {
     max-width: 100%;
     width: 100%;
 }
+
+.navbar-logo > a {
+    color: white;
+    display: inline-flex;
+    font-size: 35px;
+}
+
+.filter-container{
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+    
+}
+
+.card-content-text > p {
+    color: black;
+    text-align: center;
+    font-size: 20; 
+}
+
+
+#burger-checkbox {
+    display: none;
+}
+  
+@media all and (max-width: 768px) {
+  .navbar {
+      width: 10%;
+  }
+  
+  .filter-container {
+      display: inherit;
+      position: absolute;
+      flex-direction: column;
+      top: 16px;
+      right: 0;
+      height: 50vh;
+      width: 30vw;
+      justify-content: flex-end;
+      background-color: orange;
+  }
+   .filter-container > .input-search,
+  .input-search-date,
+  .button-search {
+      display: inherit;
+      flex-direction: column;
+      top: 50px;
+      justify-content: space-between;
+      right: 0;
+      width: 80%;
+  }
+  
+  .navbar-logo > a {
+      font-size: 35px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+  }
+  
+  #burger-checkbox {
+      z-index: 3;
+      position: absolute;
+      top: 15;
+      right: 0;
+      width: 51px;
+      height: 51px;
+      opacity: 0;
+  }
+  
+  #burger-checkbox:checked ~ .filter-container {
+      display: inherit;
+  }
+    
+  .burger-label {
+      z-index: 3;
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 51px;
+      height: 51px;
+      font-size: 42px;
+  }
+  
+  .burger-label:before {
+      content: "";
+      position: absolute;
+      background: white;
+      width: 1em;
+      height: .15em;
+      right: .1em;
+      top: .25em;
+      box-shadow:
+        0 .25em 0 0 white,
+        0 .5em 0 0 white;
+  }  
+}
+

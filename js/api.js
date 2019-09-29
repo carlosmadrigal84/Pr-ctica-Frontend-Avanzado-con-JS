@@ -27,7 +27,7 @@ const api = (API_URL = 'https://web-bootcamp-exercise-beer-api-nijliozdcg.now.sh
       }
     },
 
-    getBeers: async (searchQuery, dateQuery) => {
+    getBeers: async (searchQuery, dateQuery,limit) => {
       try {
 
         //build request url
@@ -38,8 +38,8 @@ const api = (API_URL = 'https://web-bootcamp-exercise-beer-api-nijliozdcg.now.sh
         //otherqise I lose results
         
         requestUrl = searchQuery ? `${BEERS_URL}?search=${searchQuery}`: BEERS_URL;
-
-
+        requestUrl = limit && searchQuery? requestUrl+ `&limit=${limit}`: requestUrl;
+        requestUrl = limit && !searchQuery? requestUrl+ `?limit=${limit}`: requestUrl;
         //fetch request
 
         const response = await fetch(requestUrl, {
@@ -91,6 +91,30 @@ const api = (API_URL = 'https://web-bootcamp-exercise-beer-api-nijliozdcg.now.sh
         return beer;
       } catch (e) {
         console.error(e);
+      }
+    },
+
+    addLike: async (beerId) => {
+      try {
+        //fetch request
+        const response = await fetch(`${BEERS_URL}/${beerId}/like`, {
+          method: 'POST',
+          body: JSON.stringify({
+            
+          }),
+          headers: {
+            'Content-type': 'application/json',
+            'X-API-KEY': API_KEY,
+          },
+        });
+        if (!response.ok) {
+          throw 'Error';
+        }
+        const result = await response.json();
+        return result;
+      } catch (e) {
+        console.error(e);
+        throw e;
       }
     },
   };
