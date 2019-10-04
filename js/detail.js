@@ -18,7 +18,7 @@ const detailTemplate = ({ beerId, name, brewersTips, image, likes }) => `
 					<i class="fa fa-thumbs-up"></i>
 				</span>
 			</a>
-			<span id="likes-counter" class="subtitle is-4">${likes}</span>
+			<span id="likes-counter" class="subtitle is-4">${beer.likes}</span>
 			<div class="product-rating-details">Likes
 				<span class="rating-count"></span>
 			</div>
